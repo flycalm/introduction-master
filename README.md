@@ -1,102 +1,12 @@
 # Introduction-Master
 
-> AI-powered introduction writing skill for top-tier conferences and journals — built from the DNA of Nature, Science, NeurIPS, ICML, and CVPR papers.
+> AI 驱动的顶会顶刊 Introduction 撰写 skill——从 Nature、Science、NeurIPS、ICML、CVPR 论文里逐行拆解出来的写法。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**English** | [中文](#中文)
+**中文** | [English](#english)
 
 ---
-
-## Why Introduction Matters More Than Method
-
-Here's a truth most researchers learn too late: **reviewers spend 15 minutes on your paper, and most of that is on the Introduction.**
-
-Think about it. NeurIPS gets ~40,000 submissions. Each reviewer handles 5-10 papers. They're unpaid volunteers. They scan your Abstract, read the first three paragraphs of your Introduction, glance at Figure 1 — and **that's when they decide whether your paper is a 5 (weak reject) or a 7 (weak accept).**
-
-Your Method section could be brilliant. Your experiments could be flawless. But if your Introduction doesn't hook the reviewer in those first paragraphs, **they'll never read them carefully enough to find out.**
-
-The Introduction is your paper's story. And at top venues, **storytelling wins.**
-
----
-
-## The Pain Points You Know Too Well
-
-Every researcher who's written a paper has felt this:
-
-| Pain Point | You've Been There |
-|-----------|-------------------|
-| **The Blank Page** | "How do I even start? 'With the rapid development of deep learning...' — no, that's what EVERYONE writes." |
-| **The Vague Gap** | "Existing methods have limitations... but what SPECIFICALLY is wrong? I know there's a gap, but I can't articulate it sharply." |
-| **The Dense Reviewer** | "I wrote 2 pages explaining my approach, and Reviewer #2 still said 'novelty is unclear.' What did I do wrong?" |
-| **The Structure Struggle** | "Do I start with background? Do I list related work? Do I save contributions for the end? I've rearranged the same paragraphs 5 times." |
-| **The Contribution Cliché** | "We propose a novel method... significant improvements... state-of-the-art performance." — Every. Single. Paper. |
-| **The Figure 1 Problem** | "I have results figures, but I don't know how to design that overview figure that tells the whole story at a glance." |
-
-These aren't writing problems. They're **structural problems** — and they're solvable.
-
----
-
-## What Introduction-Master Does
-
-**Introduction-Master** is a Claude Code skill that teaches you to write introductions the way top papers actually write them. Not theory. Not generic advice. **Patterns extracted from reading 15+ Nature/Science/NeurIPS papers line by line.**
-
-It turns this vague feeling of "I need a better intro" into a **concrete, repeatable process:**
-
-1. **Diagnoses** what's wrong with your current draft (vague gap? weak hook? contributions that don't match the story?)
-2. **Suggests** specific opening strategies (5 proven templates) and gap patterns (8 templates) that match your paper's actual contribution
-3. **Drafts** paragraphs that follow the exact 4-part structure used by FlashAttention, YOLOv10, LLaVA, AlphaFold3, BLIP-2, and more
-4. **Checks** that your introduction passes the "three-question test" every reviewer unconsciously applies
-
----
-
-## Quick Start
-
-```bash
-# Clone the skill into your Claude Code skills directory
-git clone https://github.com/flycalm/introduction-master.git
-
-# Use it in Claude Code
-/introduction-master
-```
-
-Then describe your paper to Claude — what problem you solve, what gap exists, what method you built, what results you got. The skill will guide you from there.
-
----
-
-## What Makes This Different
-
-Most introduction advice tells you: "be clear", "state your contributions", "motivate your work."
-
-**This skill shows you HOW**, with real patterns from real papers:
-
-- **5 opening hook strategies** — from "The Concrete Example" (used in safety/robustness papers) to "The Striking Contradiction" (used in paradigm-shift papers)
-- **8 gap templates** — scenario gaps, assumption gaps, trade-off gaps, scale gaps, domain transfer gaps, and more
-- **Annotated real introductions** from FlashAttention, YOLOv10, VAR, LLaVA-1.5, and others — showing why each sentence works, not just what it says
-- **The self-check framework**: "What problem? Why can't others solve it? How do you solve it?" — if any answer is unclear, the introduction needs work
-
----
-
-## Repository Structure
-
-```
-introduction-master/
-├── SKILL.md                          # Main skill — the writing process & 4-paragraph framework
-└── references/
-    ├── paper-examples.md             # Line-by-line annotated introductions from top papers
-    ├── opening-hooks.md              # 5 opening strategies with templates & real examples
-    └── gap-patterns.md               # 8 proven gap patterns + red flags checklist
-```
-
----
-
-## License
-
-MIT © [flycalm](https://github.com/flycalm)
-
----
-
-# 中文
 
 ## 为什么 Introduction 比 Method 重要
 
@@ -176,6 +86,96 @@ introduction-master/
     ├── paper-examples.md             # 顶会论文 Introduction 逐句批注
     ├── opening-hooks.md              # 5 种开场策略 + 模板 + 真实案例
     └── gap-patterns.md               # 8 种 Gap 模板 + 避坑清单
+```
+
+---
+
+## License
+
+MIT © [flycalm](https://github.com/flycalm)
+
+---
+
+# English
+
+## Why Introduction Matters More Than Method
+
+Here's a truth most researchers learn too late: **reviewers spend 15 minutes on your paper, and most of that is on the Introduction.**
+
+Think about it. NeurIPS gets ~40,000 submissions. Each reviewer handles 5-10 papers. They're unpaid volunteers. They scan your Abstract, read the first three paragraphs of your Introduction, glance at Figure 1 — and **that's when they decide whether your paper is a 5 (weak reject) or a 7 (weak accept).**
+
+Your Method section could be brilliant. Your experiments could be flawless. But if your Introduction doesn't hook the reviewer in those first paragraphs, **they'll never read them carefully enough to find out.**
+
+The Introduction is your paper's story. And at top venues, **storytelling wins.**
+
+---
+
+## The Pain Points You Know Too Well
+
+Every researcher who's written a paper has felt this:
+
+| Pain Point | You've Been There |
+|-----------|-------------------|
+| **The Blank Page** | "How do I even start? 'With the rapid development of deep learning...' — no, that's what EVERYONE writes." |
+| **The Vague Gap** | "Existing methods have limitations... but what SPECIFICALLY is wrong? I know there's a gap, but I can't articulate it sharply." |
+| **The Dense Reviewer** | "I wrote 2 pages explaining my approach, and Reviewer #2 still said 'novelty is unclear.' What did I do wrong?" |
+| **The Structure Struggle** | "Do I start with background? Do I list related work? Do I save contributions for the end? I've rearranged the same paragraphs 5 times." |
+| **The Contribution Cliché** | "We propose a novel method... significant improvements... state-of-the-art performance." — Every. Single. Paper. |
+| **The Figure 1 Problem** | "I have results figures, but I don't know how to design that overview figure that tells the whole story at a glance." |
+
+These aren't writing problems. They're **structural problems** — and they're solvable.
+
+---
+
+## What Introduction-Master Does
+
+**Introduction-Master** is a Claude Code skill that teaches you to write introductions the way top papers actually write them. Not theory. Not generic advice. **Patterns extracted from reading 15+ Nature/Science/NeurIPS papers line by line.**
+
+It turns this vague feeling of "I need a better intro" into a **concrete, repeatable process:**
+
+1. **Diagnoses** what's wrong with your current draft (vague gap? weak hook? contributions that don't match the story?)
+2. **Suggests** specific opening strategies (5 proven templates) and gap patterns (8 templates) that match your paper's actual contribution
+3. **Drafts** paragraphs that follow the exact 4-part structure used by FlashAttention, YOLOv10, LLaVA, AlphaFold3, BLIP-2, and more
+4. **Checks** that your introduction passes the "three-question test" every reviewer unconsciously applies
+
+---
+
+## Quick Start
+
+```bash
+# Clone the skill into your Claude Code skills directory
+git clone https://github.com/flycalm/introduction-master.git
+
+# Use it in Claude Code
+/introduction-master
+```
+
+Then describe your paper to Claude — what problem you solve, what gap exists, what method you built, what results you got. The skill will guide you from there.
+
+---
+
+## What Makes This Different
+
+Most introduction advice tells you: "be clear", "state your contributions", "motivate your work."
+
+**This skill shows you HOW**, with real patterns from real papers:
+
+- **5 opening hook strategies** — from "The Concrete Example" (used in safety/robustness papers) to "The Striking Contradiction" (used in paradigm-shift papers)
+- **8 gap templates** — scenario gaps, assumption gaps, trade-off gaps, scale gaps, domain transfer gaps, and more
+- **Annotated real introductions** from FlashAttention, YOLOv10, VAR, LLaVA-1.5, and others — showing why each sentence works, not just what it says
+- **The self-check framework**: "What problem? Why can't others solve it? How do you solve it?" — if any answer is unclear, the introduction needs work
+
+---
+
+## Repository Structure
+
+```
+introduction-master/
+├── SKILL.md                          # Main skill — the writing process & 4-paragraph framework
+└── references/
+    ├── paper-examples.md             # Line-by-line annotated introductions from top papers
+    ├── opening-hooks.md              # 5 opening strategies with templates & real examples
+    └── gap-patterns.md               # 8 proven gap patterns + red flags checklist
 ```
 
 ---
